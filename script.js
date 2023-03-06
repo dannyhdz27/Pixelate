@@ -18,3 +18,20 @@ makeRow();
 
 const button = document.getElementById("add-row");
 button.addEventListener("click", makeRow);
+
+function colorize(event) {
+  console.log("clicked!");
+  const target = event.target;
+  if (target.className.length) {
+    target.className = "";
+  } else {
+    target.className = "red";
+  }
+}
+
+table.addEventListener("click", colorize);
+
+function changeColor(event) {
+  console.log(event.target.value);
+}
+select.addEventListener("change", changeColor);
