@@ -25,13 +25,28 @@ function colorize(event) {
   if (target.className.length) {
     target.className = "";
   } else {
-    target.className = "red";
+    target.className = chosenColor;
   }
 }
 
 table.addEventListener("click", colorize);
 
-function changeColor(event) {
-  console.log(event.target.value);
+// function changeColor(event) {
+//   console.log(event.target.value);
+//   chosenColor = event.target.value;
+// }
+let chosenColor = "red";
+
+select.addEventListener("change", function (event) {
+  chosenColor = event.target.value;
+});
+
+function colorize(event) {
+  const target = event.target;
+
+  if (target.className.length) {
+    target.className = "";
+  } else {
+    target.className = chosenColor;
+  }
 }
-select.addEventListener("change", changeColor);
