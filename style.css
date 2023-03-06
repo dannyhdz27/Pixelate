@@ -1,6 +1,6 @@
 * {
   box-sizing: border-box;
-  font-family: 'Press Start 2P', cursive;
+  font-family: "Press Start 2P", cursive;
 }
 
 html {
@@ -14,4 +14,9 @@ body {
   align-items: center;
 }
 
+td {
+  height: 50px;
+  width: 50px;
+  background-color: lightgray;
+}
 /* your CSS below! */
