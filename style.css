@@ -20,3 +20,14 @@ td {
   background-color: lightgray;
 }
 /* your CSS below! */
+.red {
+  background-color: red;
+}
+
+.blue {
+  background-color: blue;
+}
+
+.yellow {
+  background-color: yellow;
+}
